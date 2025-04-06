@@ -1,0 +1,29 @@
+$primary: #ff5733;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+section{
+    padding: 60px 0;
+}
+
+.banner{
+    background: url("assets/imagenes/226934325-fondo-abstracto-con-degradado-negro-blanco.jpg") no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
+.author-img{
+    position: relative;
+    z-index: 1;
+}
+
+.author-img:before{
+    position: absolute;
+    content: "";
+    left: -20px;
+    top: 20px;
+    width: 100%;
+    height: 100%;
+    border: 5px solid $primary;
+    z-index: 1;
+}
